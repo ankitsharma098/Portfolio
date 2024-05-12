@@ -1,0 +1,136 @@
+section {
+  height: 800px;
+  max-width: 400px;
+  margin-top: 330px;
+  margin-left: 10vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  color: white;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+img[alt="ankit-image"] {
+  height: 35%;
+  width: 60%;
+  border-radius: 12px;
+  margin-top: -150px;
+}
+
+.passion {
+  height: 7%;
+  width: 45%;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  color: #a6a6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link {
+  /* background-color: #e4306d; */
+  height: 7%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  /* 
+  margin: 10px 0 15px 0; */
+}
+.git-hub,
+.linkedin {
+  background-color: #212425;
+  height: 95%;
+  width: 25%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.git-hub a,
+.linkedin a {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.git-hub img,
+.linkedin img {
+  height: 80%;
+  width: 80%;
+}
+.git-hub:hover,
+.linkedin:hover {
+  background-color: #e4306d;
+}
+.card {
+  height: 40%;
+  width: 90%;
+  background-color: #1d1d1d;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.phone {
+  height: 7%;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  gap: 10px;
+}
+.phone-no {
+  height: 120%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.phone-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phone-image img {
+  height: 25px;
+  width: 20px;
+  object-fit: cover;
+}
+.phone-no p {
+  color: #a6a6a6;
+  font-size: 1.2vw;
+}
+.phone-image:hover {
+  background-color: #e4306d;
+}
+.phone-no h6:hover {
+  color: #e4306d;
+}
+hr {
+  width: 90%;
+  color: #1d1d1d;
+}
+button {
+  height: 10%;
+  width: 60%;
+  background-color: #e4306d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-top: 10px;
+}
+button img {
+  height: 30px;
+  width: 30px;
+}

@@ -1,0 +1,127 @@
+.resume-container {
+  height: 800px;
+  max-width: 800px;
+  background-color: #111111;
+  border-radius: 15px;
+  padding: 32px 48px;
+}
+.education {
+  height: 50%;
+  margin-top: 15px;
+}
+.education-cards {
+  min-height: 40%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.study-card {
+  background-color: #111111;
+  border: 1px solid #a6a6a6;
+  width: 45%;
+  border-radius: 8px;
+  color: #a6a6a6;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+.tenth-card {
+  background-color: #111111;
+  border: 1px solid #a6a6a6;
+  min-height: 35%;
+  width: 45%;
+  border-radius: 8px;
+  color: #a6a6a6;
+  padding: 5px 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.skills-knowlege {
+  margin-top: 70px;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.working-skills {
+  width: 45%;
+  height: 100%;
+}
+.indicators {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.labels {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.web,
+.app,
+.team {
+  min-height: 30%;
+}
+.web-design {
+  height: 10%;
+  background-color: #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.web-design-fill {
+  width: 25%;
+  height: 100%;
+  background-color: #e4306d;
+}
+.app-design {
+  height: 10%;
+  background-color: #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.app-design-fill {
+  width: 85%;
+  height: 100%;
+  background-color: #9272d4;
+}
+.team-design {
+  height: 10%;
+  background-color: #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.team-design-fill {
+  width: 85%;
+  height: 100%;
+  background-color: #5185d4;
+}
+.knowlege {
+  width: 45%;
+
+  height: 100%;
+}
+
+.skills {
+  height: 50%;
+  width: 35%;
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  color: #a6a6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-outer {
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}

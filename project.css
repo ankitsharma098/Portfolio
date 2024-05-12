@@ -1,0 +1,59 @@
+.project-container {
+  height: 800px;
+  max-width: 800px;
+  background-color: #111111;
+  border-radius: 15px;
+  padding: 32px 48px;
+}
+.projects {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+.first-div,
+.second-div {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+.project1,
+.project2,
+.project3,
+.project4 {
+  height: 100%;
+  width: 40%;
+  border-radius: 8px;
+  border: 2px solid #a6a6a6;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+.project1:hover,
+.project2:hover,
+.project3,
+.project4 {
+  cursor: pointer;
+}
+.project1 img,
+.project2 img,
+.project3 img,
+.project4 img {
+  height: 80%;
+  width: 90%;
+  object-fit: contain;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.project-paragraph {
+  color: white;
+  display: inline;
+  font-weight: 600;
+  font-size: 3vh;
+  padding-left: 20px;
+  transition: color 0.3s ease;
+}
+.project-paragraph:hover {
+  color: #e4306d;
+}

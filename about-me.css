@@ -1,0 +1,62 @@
+.about-outer-div {
+  height: 800px;
+  max-width: 800px;
+  background-color: #111111;
+  border-radius: 15px;
+  padding: 32px 48px;
+}
+.about-me h2 {
+  color: white;
+  font-size: 2.5vw;
+}
+.mycontent p {
+  margin-top: 30px;
+  color: #a6a6a6;
+  font-size: 1.5vw;
+  white-space: 5px;
+  letter-spacing: 2px;
+}
+.what-i-do-heading {
+  margin-top: 75px;
+  margin-bottom: 35px;
+}
+.what-i-do {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25%;
+  width: 100%;
+}
+.app-developer-card,
+.web-developer-card {
+  background-color: #111111;
+  border: 1px solid #a6a6a6;
+  height: 100%;
+  width: 45%;
+  border-radius: 8px;
+  color: #a6a6a6;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  gap: 5px;
+}
+.app-developer-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.web-developer-card img {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+}
+.app-content h2,
+.web-content h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* .about-me hr {
+  width: 250px;
+  height: 3px;
+  border-color: #e4306d;
+  background-color: #e4306d;
+} */
