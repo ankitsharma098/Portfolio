@@ -1,62 +1,83 @@
 .about-outer-div {
-  height: 800px;
   max-width: 800px;
+  height: 800px;
   background-color: #111111;
   border-radius: 15px;
-  padding: 32px 48px;
+  padding: 2rem 3rem;
+  margin: 0 auto;
 }
+
 .about-me h2 {
   color: white;
-  font-size: 2.5vw;
+  font-size: 2rem;
 }
+
 .mycontent p {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   color: #a6a6a6;
-  font-size: 1.5vw;
-  white-space: 5px;
-  letter-spacing: 2px;
+  font-size: 1rem;
+  white-space: 0.3125rem;
+  letter-spacing: 0.125rem;
 }
+
 .what-i-do-heading {
-  margin-top: 75px;
-  margin-bottom: 35px;
+  display: flex;
+  margin-top: 4.6875rem;
+  margin-bottom: 2.1875rem;
 }
+
 .what-i-do {
   display: flex;
   justify-content: space-evenly;
-  height: 25%;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
+
 .app-developer-card,
 .web-developer-card {
   background-color: #111111;
   border: 1px solid #a6a6a6;
-  height: 100%;
-  width: 45%;
   border-radius: 8px;
   color: #a6a6a6;
   display: flex;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  flex: 1 1 40%;
+  max-width: 45%;
 }
-.app-developer-card img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
+
+.app-developer-card img,
 .web-developer-card img {
-  width: 50px;
-  height: 40px;
+  width: 3.125rem;
+  height: auto;
   object-fit: contain;
 }
+
 .app-content h2,
 .web-content h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
 }
-/* .about-me hr {
-  width: 250px;
-  height: 3px;
-  border-color: #e4306d;
-  background-color: #e4306d;
-} */
+
+@media (max-width: 800px) {
+  .about-outer-div {
+    padding: 1rem;
+  }
+
+  .about-me h2,
+  .what-i-do-heading h1 {
+    font-size: 1.5rem;
+  }
+
+  .mycontent p,
+  .app-content h2,
+  .web-content h2 {
+    font-size: 0.9rem;
+  }
+
+  .app-developer-card,
+  .web-developer-card {
+    max-width: 100%;
+  }
+}

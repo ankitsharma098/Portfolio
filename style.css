@@ -1,0 +1,171 @@
+General Styles * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #a6a6a6;
+}
+
+.body-outer-div {
+  max-width: 1200px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #111111;
+  padding: 1rem;
+}
+
+/* Navbar Styles */
+.navbar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.nav-container nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d1d1d;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #a6a6a6;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #e4306d;
+}
+
+/* Section Styles */
+.about-outer-div,
+.resume-container,
+.project-container,
+.contact {
+  background-color: #111111;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section Specific Styles */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mail-phone {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.phone-no-card,
+.email-card {
+  background-color: #1d1d1d;
+  border-radius: 0.9375rem;
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+}
+
+form {
+  width: 100%;
+  border: 1px solid #898a8a;
+  border-radius: 0.75rem;
+  padding: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="message"] {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: white;
+}
+
+label {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -1rem;
+  font-size: 0.8rem;
+  color: #e4306d;
+}
+
+button[type="submit"] {
+  background-color: #e4306d;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #c62b5e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .body-outer-div {
+    flex-direction: column;
+  }
+
+  .mail-phone {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .phone-no-card,
+  .email-card {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}

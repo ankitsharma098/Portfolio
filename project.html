@@ -3,40 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="project.css" />
   </head>
   <body>
     <div class="project-container">
-      <h2
-        style="color: white; display: inline; font-weight: 600; font-size: 5vh"
-      >
-        Projects
-      </h2>
+      <h2 class="project-heading">Projects</h2>
       <div class="projects">
-        <div class="first-div">
-          <div class="project1">
-            <img src="./projects Images/chatBot.png" alt="" />
+        <div class="project-row">
+          <div class="project-card">
+            <img src="./projects Images/chatBot.png" alt="Chat Bot Project" />
             <div class="project-title">
-              <p class="project-paragraph">Lets Talk to a Bot</p>
+              <p class="project-paragraph">Let's Talk to a Bot</p>
             </div>
           </div>
-          <div class="project2">
-            <img src="./projects Images/To Do.png" alt="" />
+          <div class="project-card">
+            <img src="./projects Images/To Do.png" alt="To Do Project" />
             <div class="project-title">
               <p class="project-paragraph">Write Your Goals</p>
             </div>
           </div>
         </div>
-        <div class="second-div">
-          <div class="project3">
-            <img src="./projects Images/portfolio.png" alt="" />
+        <div class="project-row">
+          <div class="project-card">
+            <img
+              src="./projects Images/portfolio.png"
+              alt="Portfolio Project"
+            />
             <div class="project-title">
               <p class="project-paragraph">Personal Portfolio</p>
             </div>
           </div>
-          <div class="project3">
-            <img src="./projects Images/focus on Today.png" alt="" />
+          <div class="project-card">
+            <img
+              src="./projects Images/focus on Today.png"
+              alt="Focus Project"
+            />
             <div class="project-title">
               <p class="project-paragraph">Focus On Today</p>
             </div>
@@ -44,5 +46,19 @@
         </div>
       </div>
     </div>
+
+    <!-- Dialog box -->
+    <div class="project-dialog" id="projectDialog">
+      <div class="dialog-content">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Project Image" />
+        <h2></h2>
+        <p></p>
+        <p>Client:</p>
+        <p>Preview: <a href="#" target="_blank"></a></p>
+      </div>
+    </div>
+
+    <script src="project.js"></script>
   </body>
 </html>

@@ -1,106 +1,207 @@
 .contact {
-  height: 800px;
   max-width: 800px;
+  height: 800px;
   background-color: #111111;
   border-radius: 15px;
-  padding: 32px 48px;
+  padding: 2rem 3rem;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  display: inline;
 }
 
 .mail-phone {
   display: flex;
-  justify-content: start;
-  gap: 25px;
-  margin-top: 50px;
+  gap: 1.5625rem;
+  margin-top: 3.125rem;
 }
+
 .phone-no-card,
 .email-card {
-  /* //try to make it in % */
-  height: 18vh;
-  width: 20vw;
+  height: 8rem;
+  width: auto;
   background-color: #212425;
-  border-radius: 15px;
-  padding-left: 48px;
-  padding-top: 15px;
+  border-radius: 0.9375rem;
+  padding: 0.9375rem 1rem;
+  text-align: center;
 }
+
+.card-heading {
+  color: white;
+  font-size: 1.2rem;
+  text-align: start;
+}
+
 .phone-no-card p,
 .email-card p {
   color: #898a8a;
   cursor: pointer;
-  font-size: 1.1vw;
-  margin-top: 10px;
+  font-size: 0.8rem;
+  margin-top: 0.625rem;
 }
 
 form {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   height: 50%;
-  width: 80%;
+  width: 100%;
   border: 1px solid #898a8a;
-  border-radius: 12px;
-  padding: 32px 48px;
+  border-radius: 0.75rem;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-heading {
+  color: #898a8a;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .form-group {
-  margin-top: 40px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="message"] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 8px;
+  padding: 0.625rem;
+  margin-bottom: 0.5rem;
   border: none;
   border-bottom: 1px solid #999;
   background-color: transparent;
   color: white;
   outline: none;
 }
+
 label {
   position: absolute;
-  font-size: 1.5vw;
-  top: -15px;
+  top: 0.625rem;
+  left: 0.625rem;
+  font-size: 1rem;
   color: #999;
   transition: all 0.3s ease;
 }
 
-.name-label-change {
-  top: -30px;
+input[type="text"]:focus ~ label,
+input[type="email"]:focus ~ label,
+input[type="message"]:focus ~ label {
+  top: -1rem;
   left: 0;
+  font-size: 0.8rem;
   color: #e4306d;
-  font-size: 1.5vw;
-  transition: all 0.3s ease;
-}
-.email-label-change {
-  top: -30px;
-  left: 0;
-  color: blue;
-  font-size: 1.5vw;
-  transition: all 0.3s ease;
-}
-.message-label-change {
-  top: -30px;
-  left: 0;
-  color: purple;
-  font-size: 1.5vw;
-  transition: all 0.3s ease;
 }
 
 textarea {
   resize: unset;
-  height: 100px;
+  height: 6.25rem;
 }
-
+.submit-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 button[type="submit"] {
-  margin-top: 15px;
-  width: 100px;
+  margin-top: 0.9375rem;
+  width: 6.25rem;
   background-color: transparent;
   color: #fff;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 0.8rem;
   border: 1px solid #fff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
+  align-self: center;
+}
+@media (max-width: 768px) {
+  .contact {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .mail-phone {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+  }
+
+  .phone-no-card,
+  .email-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 0.5rem;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .mail-phone {
+    margin-top: 1rem;
+  }
+
+  .phone-no-card,
+  .email-card {
+    height: 6rem;
+    width: 10rem;
+    padding: 0.5rem;
+  }
+
+  .card-heading {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 0.5rem;
+  }
+
+  .form-heading {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="message"] {
+    padding: 0.5rem;
+  }
+
+  label {
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  input[type="text"]:focus ~ label,
+  input[type="email"]:focus ~ label,
+  input[type="message"]:focus ~ label {
+    top: -0.8rem;
+    font-size: 0.7rem;
+  }
+
+  button[type="submit"] {
+    margin-top: 0.5rem;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
 }

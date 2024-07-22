@@ -3,45 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" defer href="index.css" />
-    <link rel="stylesheet" defer href="contact.css" />
-    <link rel="stylesheet" defer href="resume.css" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .body {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+      }
+
+      .body-outer-div {
+        max-width: 1200px;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        background-color: gray;
+        padding: 1rem;
+      }
+
+      .navbar-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: flex-start;
+      }
+
+      @media (max-width: 768px) {
+        .body-outer-div {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .navbar-content {
+          gap: 1rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="about-me.css" />
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="resume.css" /> -->
     <link rel="stylesheet" href="project.css" />
+
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="project.js" defer></script>
     <script src="index.js" defer></script>
   </head>
   <body>
-    <div class="outer">
-      <section>
-        <img src="./social/ankit.jpg" alt="ankit-image" />
-        <h2 style="font-size: 2vw">Ankit Sharma</h2>
-        <div class="passion">
-          <h6 style="font-size: 1.2vw">Software Engineer</h6>
-        </div>
-        <div class="social-link">
+    <div class="body-outer-div">
+      <section class="personal-info-section">
+        <img src="./social/ankit.jpg" alt="ankit-image" class="ankit-img" />
+        <h1>Ankit Sharma</h1>
+        <div class="passion">Software Engineer</div>
+        <nav class="social-link">
           <div class="git-hub">
             <a href="https://github.com/ankitsharma098/Health" target="_blank">
-              <img src="./social/github.png" alt=""
-            /></a>
+              <img src="./social/github.png" alt="" />
+            </a>
           </div>
           <div class="linkedin">
             <a
               href="http://www.linkedin.com/in/ankit-sharma-037379223"
               target="_blank"
-              ><img src="./social/linkedin.png" alt=""
-            /></a>
+            >
+              <img src="./social/linkedin.png" alt="" />
+            </a>
           </div>
-        </div>
-        <div class="card">
+        </nav>
+        <article class="personal-details-card">
           <div class="personal-details">
             <div class="phone-image">
               <img src="./social/phone.png" alt="" />
             </div>
             <div class="contact-detail">
-              <div style="font-size: 1vw; color: #a6a6a6">Phone</div>
-              <div style="font-size: 1.3vw; font-weight: bold">
-                +91 7302104299
-              </div>
+              <div>Phone</div>
+              <div>+91 7302104299</div>
             </div>
           </div>
           <hr />
@@ -50,10 +97,8 @@
               <img src="./social/location.png" alt="" />
             </div>
             <div class="contact-detail">
-              <div style="font-size: 1vw; color: #a6a6a6">Location</div>
-              <div style="font-size: 1.3vw; font-weight: bold">
-                Hapur, Uttar Pradesh
-              </div>
+              <div>Location</div>
+              <div>Hapur, Uttar Pradesh</div>
             </div>
           </div>
           <hr />
@@ -62,10 +107,8 @@
               <img src="./social/mail.png" alt="" />
             </div>
             <div class="contact-detail">
-              <div style="font-size: 1vw; color: #a6a6a6">Email</div>
-              <div style="font-size: 1.3vw; font-weight: bold">
-                ankits45987@gmail.com
-              </div>
+              <div>Email</div>
+              <div>ankits45987@gmail.com</div>
             </div>
           </div>
           <hr />
@@ -74,46 +117,46 @@
               <img src="./social/location.png" alt="" />
             </div>
             <div class="contact-detail">
-              <div style="font-size: 1vw; color: #a6a6a6">Birthday</div>
-              <div style="font-size: 1.3vw; font-weight: bold">May 25 2003</div>
+              <div>Birthday</div>
+              <div>May 25 2003</div>
             </div>
           </div>
-        </div>
+        </article>
         <button>
           <img src="./social/download.png" alt="" />
           <p>Download CV</p>
         </button>
       </section>
-      <!-- <div class="mode">
-        <img src="light_mode_FILL0_wght400_GRAD0_opsz24.png" alt="light mode" />
-      </div> -->
+
       <div class="navbar-content">
-        <nav>
-          <div id="home" class="nav-bar">
-            <a href="#home">
-              <img src="./navimages/about-me.png" alt="" />
-            </a>
-            <a href="#home">About me</a>
-          </div>
-          <div id="resume" class="nav-bar">
-            <a href="#resume">
-              <img src="./navimages/resume.png" alt="" />
-            </a>
-            <a href="#resume">Resume</a>
-          </div>
-          <div id="project" class="nav-bar">
-            <a href="#preoject">
-              <img src="./navimages/project.png" alt="" />
-            </a>
-            <a href="#preoject">Projects</a>
-          </div>
-          <div id="contact" class="nav-bar">
-            <a href="#contact">
-              <img src="./navimages/contact.png" alt="" />
-            </a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
+        <div class="nav-container">
+          <nav>
+            <div id="home" class="nav-bar">
+              <a href="#home">
+                <img src="./navimages/about-me.png" alt="" />
+              </a>
+              <a href="#home">About me</a>
+            </div>
+            <div id="resume" class="nav-bar">
+              <a href="#resume">
+                <img src="./navimages/resume.png" alt="" />
+              </a>
+              <a href="#resume">Resume</a>
+            </div>
+            <div id="project" class="nav-bar">
+              <a href="#project">
+                <img src="./navimages/project.png" alt="" />
+              </a>
+              <a href="#project">Projects</a>
+            </div>
+            <div id="contact" class="nav-bar">
+              <a href="#contact">
+                <img src="./navimages/contact.png" alt="" />
+              </a>
+              <a href="#contact">Contact</a>
+            </div>
+          </nav>
+        </div>
         <div class="about-outer-div">
           <div class="about-me">
             <h2>About Me</h2>
@@ -132,7 +175,7 @@
             </div>
           </div>
           <div class="what-i-do-heading">
-            <h1 style="color: white; font-weight: 200; font-size: 2.5vw">
+            <h1 style="color: white; font-weight: 200; font-size: 2rem">
               What I Do
             </h1>
           </div>
@@ -142,12 +185,12 @@
                 <img src="./social/app.png" alt="" />
               </div>
               <div class="app-content">
-                <h2 style="color: white; font-weight: 500; font-size: 1.5vw">
+                <h2 style="color: white; font-weight: 500; font-size: 1.2rem">
                   App Development
                 </h2>
-                <p style="font-size: 1vw">
+                <p>
                   I have some months of professional work experience which
-                  helped me strengthen my experience in Dart, Flutter, APIs and
+                  helped me strengthen my experience in Python, Flutter, and
                   Firebase.
                 </p>
               </div>
@@ -157,10 +200,10 @@
                 <img src="./social/web.png" alt="" />
               </div>
               <div class="web-content">
-                <h2 style="color: white; font-weight: 500; font-size: 1.5vw">
+                <h2 style="color: white; font-weight: 500; font-size: 1.2rem">
                   Web Development
                 </h2>
-                <p style="font-size: 1vw">
+                <p>
                   I have some months of professional work experience which
                   helped me strengthen my experience in HTML, CSS, and
                   JavaScript.
@@ -169,102 +212,113 @@
             </div>
           </div>
         </div>
-        <div class="contact">
-          <h2 style="color: white; display: inline; font-size: 3vw">Contact</h2>
-          <div class="mail-phone">
-            <div class="phone-no-card">
-              <h2 style="color: white; display: inline">Phone :</h2>
-              <p>+91 7302104299</p>
-              <p>+91 7302104299</p>
-            </div>
-            <div class="email-card">
-              <h2 style="color: white; display: inline">Email :</h2>
-              <p>ankits45987@gmail.com</p>
-            </div>
-          </div>
-          <form>
-            <h2 style="color: #898a8a; display: inline; font-size: 1.5vw">
-              I'm always open to discussing with You
-            </h2>
-            <div class="form-group name-input">
-              <label for="name" class="name">Name *</label>
-              <input type="text" id="name" name="name" required />
-            </div>
 
-            <div class="form-group">
-              <label for="email" class="email">Email *</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="message" class="message">Message *</label>
-              <input type="message" id="message" name="message" required />
-            </div>
-
-            <button type="submit">Submit</button>
-          </form>
-        </div>
         <div class="resume-container">
           <h2
             style="
               color: white;
               display: inline;
               font-weight: 600;
-              font-size: 5vh;
+              font-size: 2rem;
             "
           >
             Resume
           </h2>
-
+          <div class="experience">
+            <h2
+              style="
+                color: white;
+                display: inline;
+                font-weight: 500;
+                font-size: 1.5rem;
+              "
+            >
+              Experience
+            </h2>
+            <div class="card">
+              <div class="card-content">
+                <h2 style="color: grey; font-weight: 600; font-size: 1rem">
+                  2023
+                </h2>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  Mobile App Development Intern
+                </p>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  Metaphile Company
+                </p>
+                <ul
+                  style="
+                    color: grey;
+                    font-weight: 400;
+                    font-size: 0.9rem;
+                    padding-left: 20px;
+                  "
+                >
+                  <li>
+                    Completed a 3-month internship focusing on mobile app
+                    development
+                  </li>
+                  <li>Worked with Flutter and Firebase technologies</li>
+                  <li>Work on the ERP based Apps</li>
+                  <li>
+                    Gained experience with complex Android tasks like
+                    Workmanager and FL Charts
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="education">
             <h2
               style="
                 color: white;
                 display: inline;
                 font-weight: 500;
-                font-size: 3.5vh;
+                font-size: 1.5rem;
               "
             >
               Education
             </h2>
-            <div class="education-cards">
-              <div class="study-card">
-                <div class="card-content">
-                  <h2 style="color: grey; font-weight: 600; font-size: 2.5vh">
-                    2020-2021
-                  </h2>
-                  <p style="color: white; font-weight: 500; font-size: 2.5vh">
-                    B.tech in CSE (75% expected)
-                  </p>
-                  <p style="color: grey; font-weight: 500; font-size: 2.5vh">
-                    IIMT Engineering College, Meerut, Uttar Pradesh
-                  </p>
-                </div>
-              </div>
-              <div class="study-card">
-                <div class="card-content">
-                  <h2 style="color: grey; font-weight: 600; font-size: 2.5vh">
-                    2020-2021
-                  </h2>
-                  <p style="color: white; font-weight: 500; font-size: 2.5vh">
-                    12th (94%)
-                  </p>
-                  <p style="color: grey; font-weight: 500; font-size: 2.5vh">
-                    Indus Global School, Hapur, Uttar Pradesh
-                  </p>
-                </div>
+
+            <div class="card">
+              <div class="card-content">
+                <h2 style="color: grey; font-weight: 600; font-size: 1rem">
+                  2020-2021
+                </h2>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  B.tech in CSE (75% expected)
+                </p>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  IIMT Engineering College, Meerut, Uttar Pradesh
+                </p>
               </div>
             </div>
-            <div class="tenth-card">
-              <h2 style="color: grey; font-weight: 600; font-size: 2.5vh">
-                2019-2020
-              </h2>
-              <p style="color: white; font-weight: 500; font-size: 2.5vh">
-                10th (74%)
-              </p>
-              <p style="color: grey; font-weight: 500; font-size: 2.5vh">
-                S.C.M Public School, Hapur, Uttar Pradesh
-              </p>
+            <div class="card">
+              <div class="card-content">
+                <h2 style="color: grey; font-weight: 600; font-size: 1rem">
+                  2020-2021
+                </h2>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  12th (94%)
+                </p>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  Indus Global School, Hapur, Uttar Pradesh
+                </p>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.25rem">
+              <div class="card-content">
+                <h2 style="color: grey; font-weight: 600; font-size: 1rem">
+                  2019-2020
+                </h2>
+                <p style="color: white; font-weight: 500; font-size: 1rem">
+                  10th (74%)
+                </p>
+                <p style="color: grey; font-weight: 500; font-size: 1rem">
+                  S.C.M Public School, Hapur, Uttar Pradesh
+                </p>
+              </div>
             </div>
           </div>
           <div class="skills-knowlege">
@@ -274,62 +328,47 @@
                   color: white;
                   display: inline;
                   font-weight: 500;
-                  font-size: 3.5vh;
-                  padding-bottom: 10px;
+                  font-size: 1.5rem;
+                  padding-bottom: 0.625rem;
                 "
               >
                 Working Skills
               </h2>
-              <div class="indicators">
-                <div class="web">
-                  <div class="labels">
-                    <p
-                      style="color: #a6a6a6; font-weight: 600; font-size: 2.5vh"
-                    >
-                      Web Design
-                    </p>
-                    <p
-                      style="color: #a6a6a6; font-weight: 600; font-size: 2.5vh"
-                    >
-                      25%
-                    </p>
+              <div class="skill-bars">
+                <div class="skill-bar">
+                  <div class="skill-label">
+                    <span>Web Design</span>
+                    <span>25%</span>
                   </div>
-                  <div class="web-design">
-                    <div class="web-design-fill"></div>
+                  <div class="skill-progress">
+                    <div
+                      class="skill-progress-fill"
+                      style="width: 25%; background-color: #e4306d"
+                    ></div>
                   </div>
                 </div>
-                <div class="app">
-                  <div class="labels">
-                    <p
-                      style="color: #a6a6a6; font-weight: 600; font-size: 2.5vh"
-                    >
-                      Mobile App
-                    </p>
-                    <p
-                      style="color: #a6a6a6; font-weight: 600; font-size: 2.5vh"
-                    >
-                      85%
-                    </p>
+                <div class="skill-bar">
+                  <div class="skill-label">
+                    <span>Mobile App</span>
+                    <span>80%</span>
                   </div>
-                  <div class="app-design">
-                    <div class="app-design-fill"></div>
+                  <div class="skill-progress">
+                    <div
+                      class="skill-progress-fill"
+                      style="width: 80%; background-color: #9272d4"
+                    ></div>
                   </div>
                 </div>
-                <div class="team">
-                  <div class="labels">
-                    <p
-                      style="color: #a6a6a6; font-weight: 600; font-size: 2.5vh"
-                    >
-                      Team Collaboration
-                    </p>
-                    <p
-                      style="color: #a6a6a6; font-weight: 600; font-size: 2.5vh"
-                    >
-                      85%
-                    </p>
+                <div class="skill-bar">
+                  <div class="skill-label">
+                    <span>Team Collaboration</span>
+                    <span>85%</span>
                   </div>
-                  <div class="team-design">
-                    <div class="team-design-fill"></div>
+                  <div class="skill-progress">
+                    <div
+                      class="skill-progress-fill"
+                      style="width: 85%; background-color: #5185d4"
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -339,79 +378,113 @@
                 style="
                   color: white;
                   font-weight: 500;
-                  font-size: 3.5vh;
-                  margin-bottom: 10px;
+                  font-size: 1.5rem;
+                  margin-bottom: 0.625rem;
                 "
               >
-                Technical Skills
+                Knowledges
               </h2>
-              <div class="skill-outer">
-                <div class="skills">
-                  <h6 style="font-size: 1.2vw; display: inline">Java</h6>
-                </div>
-                <div class="skills">
-                  <h6 style="font-size: 1.2vw; display: inline">C</h6>
-                </div>
-              </div>
-              <div class="skill-outer">
-                <div class="skills">
-                  <h6 style="font-size: 1.2vw; display: inline">Python</h6>
-                </div>
-                <div class="skills">
-                  <h6 style="font-size: 1.2vw; display: inline">Dart</h6>
-                </div>
-              </div>
-              <div class="skill-outer">
-                <div class="skills">
-                  <h6 style="font-size: 1.2vw; display: inline">Flutter</h6>
-                </div>
-                <div class="skills">
-                  <h6 style="font-size: 1.2vw; display: inline">HTML CSS</h6>
-                </div>
+              <div class="knowledge-pills">
+                <div class="pill">C</div>
+                <div class="pill">Java</div>
+                <div class="pill">Python</div>
+                <div class="pill">Dart</div>
+                <div class="pill">Flutter</div>
+                <div class="pill">Firebase</div>
+                <div class="pill">HTML</div>
+                <div class="pill">CSS</div>
+                <div class="pill">JavaScript</div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="project-container">
-          <h2
-            style="
-              color: white;
-              display: inline;
-              font-weight: 600;
-              font-size: 5vh;
-            "
-          >
-            Projects
-          </h2>
+          <h2 class="project-heading">Projects</h2>
           <div class="projects">
-            <div class="first-div">
-              <div class="project1">
-                <img src="./projects Images/chatBot.png" alt="" />
+            <div class="project-row">
+              <div class="project-card">
+                <img
+                  src="./projects Images/chatBot.png"
+                  alt="Chat Bot Project"
+                />
                 <div class="project-title">
-                  <p class="project-paragraph">Lets Talk to a Bot</p>
+                  <p class="project-paragraph">Let's Talk to a Bot</p>
                 </div>
               </div>
-              <div class="project2">
-                <img src="./projects Images/To Do.png" alt="" />
+              <div class="project-card">
+                <img src="./projects Images/To Do.png" alt="To Do Project" />
                 <div class="project-title">
                   <p class="project-paragraph">Write Your Goals</p>
                 </div>
               </div>
             </div>
-            <div class="second-div">
-              <div class="project3">
-                <img src="./projects Images/portfolio.png" alt="" />
+            <div class="project-row">
+              <div class="project-card">
+                <img
+                  src="./projects Images/portfolio.png"
+                  alt="Portfolio Project"
+                />
                 <div class="project-title">
                   <p class="project-paragraph">Personal Portfolio</p>
                 </div>
               </div>
-              <div class="project3">
-                <img src="./projects Images/focus on Today.png" alt="" />
+              <div class="project-card">
+                <img
+                  src="./projects Images/focus on Today.png"
+                  alt="Focus Project"
+                />
                 <div class="project-title">
                   <p class="project-paragraph">Focus On Today</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="project-dialog" id="projectDialog">
+          <div class="dialog-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="Project Image" />
+            <h2></h2>
+            <p></p>
+            <p>Client:</p>
+            <p>Preview: <a href="#" target="_blank"></a></p>
+          </div>
+        </div>
+
+        <div class="contact">
+          <h2 class="contact-heading">Contact</h2>
+          <div class="mail-phone">
+            <div class="phone-no-card">
+              <h2 class="card-heading">Phone :</h2>
+              <p>+91 7302104299</p>
+              <p>+91 7302104299</p>
+            </div>
+            <div class="email-card">
+              <h2 class="card-heading">Email :</h2>
+              <p>ankits45987@gmail.com</p>
+            </div>
+          </div>
+          <form>
+            <h2 class="form-heading">I'm always open to discussing with You</h2>
+            <div class="form-group name-input">
+              <input type="text" id="name" name="name" required />
+              <label for="name" class="name">Name *</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email" class="email">Email *</label>
+            </div>
+
+            <div class="form-group">
+              <input type="message" id="message" name="message" required />
+              <label for="message" class="message">Message *</label>
+            </div>
+          </form>
+          <div class="submit-div">
+            <button type="submit">Submit</button>
           </div>
         </div>
       </div>
