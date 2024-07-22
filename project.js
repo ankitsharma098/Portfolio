@@ -26,7 +26,7 @@ projectCards.forEach((card, i) => {
   card.addEventListener('click', () => {
     const projectTitle = card.querySelector('.project-paragraph').textContent;
     const projectImageSrc = card.querySelector('img').src;
-    // Set the dialog content
+  
     dialogImage.src = projectImageSrc;
     dialogHeading.textContent = projectTitle;
     dialogDescription.textContent = 'Project Details';
@@ -37,12 +37,12 @@ projectCards.forEach((card, i) => {
   });
 });
 
-// Add click event listener to close button
+
 closeBtn.addEventListener('click', () => {
   projectDialog.style.display = 'none';
 });
 
-// Add click event listener to close the dialog when clicking outside
+
 window.addEventListener('click', event => {
   if (event.target === projectDialog) {
     projectDialog.style.display = 'none';
