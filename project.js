@@ -19,7 +19,7 @@ const projectLinks = [
   'https://www.linkedin.com/feed/update/urn:li:activity:7192208552202010624/',
   'https://www.linkedin.com/feed/update/urn:li:activity:7136396610476929024/',
   'prtfolio.in',
-  'focus on today'
+  'https://github.com/ankitsharma098/Focus-on-Today'
 ];
 
 projectCards.forEach((card, i) => {
