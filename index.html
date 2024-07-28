@@ -17,17 +17,6 @@
         justify-content: center;
       }
 
-      .body-outer-div {
-        max-width: 1200px;
-        margin: 15px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2rem;
-        background-color: gray;
-        padding: 1rem;
-      }
-
       .navbar-content {
         display: flex;
         flex-direction: column;
@@ -46,6 +35,7 @@
         }
       }
     </style>
+
     <link rel="stylesheet" href="index.css" />
     <!-- <link rel="stylesheet" href="about-me.css" />
     <link rel="stylesheet" href="nav-bar.css" />
@@ -122,7 +112,10 @@
             </div>
           </div>
         </article>
-        <button>
+        <button
+          type="button"
+          onclick="window.open('https://drive.google.com/file/d/1urHYBcqNKk1IxsJUsw6oc6qDMSSKN5v2/view?usp=sharing', '_blank')"
+        >
           <img src="./social/download.png" alt="" />
           <p>Download CV</p>
         </button>
@@ -468,7 +461,7 @@
               <p>ankits45987@gmail.com</p>
             </div>
           </div>
-          <form>
+          <form id="contactForm" onsubmit="return false;">
             <h2 class="form-heading">I'm always open to discussing with You</h2>
             <div class="form-group name-input">
               <input type="text" id="name" name="name" required />
@@ -486,8 +479,17 @@
             </div>
           </form>
           <div class="submit-div">
-            <button type="submit">Submit</button>
+            <button type="button" onclick="submitForm()">Submit</button>
           </div>
+          <div
+            id="submissionMessage"
+            style="
+              display: none;
+              text-align: center;
+              margin-top: 1rem;
+              color: #4caf50;
+            "
+          ></div>
         </div>
       </div>
     </div>

@@ -60,3 +60,28 @@ if (menuToggle) {
     nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
   });
 }
+
+function submitForm() {
+  var form = document.getElementById("contactForm");
+  var name = form.elements["name"].value;
+  var email = form.elements["email"].value;
+  var message = form.elements["message"].value;
+
+  if (name && email && message) {
+    // Here you would typically send the form data to a server
+    // For this example, we'll just show a success message
+    document.getElementById("submissionMessage").innerHTML =
+      "Thank you! Your message has been sent.";
+    document.getElementById("submissionMessage").style.display = "block";
+
+    // Clear the form
+    form.reset();
+
+    // Hide the message after 5 seconds
+    setTimeout(function () {
+      document.getElementById("submissionMessage").style.display = "none";
+    }, 5000);
+  } else {
+    alert("Please fill in all fields.");
+  }
+}

@@ -1,14 +1,8 @@
 section {
   max-width: 100%;
   margin: 5rem auto 0;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-radius: 1.25rem;
   color: white;
-  padding: 1.25rem;
   box-sizing: border-box;
 }
 

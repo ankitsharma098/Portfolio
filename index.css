@@ -20,8 +20,7 @@ p {
   letter-spacing: 0.125rem;
 }
 
-/* About Section */
-.body-outer-div {
+About Section .body-outer-div {
   max-width: 1200px;
   margin: 15px auto;
   display: flex;
@@ -358,21 +357,6 @@ nav {
 
 .nav-bar:hover a {
   color: white;
-}
-
-/* Home Section */
-section {
-  max-width: 100%;
-  margin: 5rem auto 0;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1.25rem;
-  color: white;
-  padding: 1.25rem;
-  box-sizing: border-box;
 }
 
 img[alt="ankit-image"] {
