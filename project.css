@@ -42,6 +42,7 @@
 .project-card img {
   width: 100%;
   object-fit: contain;
+  height: auto;
 }
 
 .project-title {

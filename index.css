@@ -42,22 +42,9 @@ About Section .body-outer-div {
   border-radius: 15px;
 }
 
-.ankit-img {
-  width: 150px; /* Adjust as needed */
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-}
-
 .personal-info-section h1 {
   color: white;
   margin-bottom: 0.5rem;
-}
-
-.passion {
-  color: #a6a6a6;
-  margin-bottom: 1rem;
 }
 
 .social-link {
@@ -74,15 +61,7 @@ About Section .body-outer-div {
   margin-bottom: 1rem;
 }
 
-.personal-details {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
 .personal-details img {
-  width: 20px;
-  height: 20px;
   margin-right: 0.5rem;
 }
 
@@ -117,17 +96,6 @@ About Section .body-outer-div {
   gap: 1rem;
 }
 
-.card {
-  background-color: #1d1d1d;
-  border: 1px solid #a6a6a6;
-  border-radius: 8px;
-  color: #a6a6a6;
-  padding: 0.3125rem 0.625rem;
-  flex: 1 1 45%;
-  max-width: 45%;
-  height: 100%;
-}
-
 .card-content {
   height: 100%;
   display: flex;
@@ -142,12 +110,6 @@ About Section .body-outer-div {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-}
-
-.working-skills {
-  width: 100%;
-  max-width: 45%;
-  height: 100%;
 }
 
 .skill-bars {
@@ -179,12 +141,6 @@ About Section .body-outer-div {
 }
 
 .skill-progress-fill {
-  height: 100%;
-}
-
-.knowlege {
-  width: 100%;
-  max-width: 45%;
   height: 100%;
 }
 
@@ -229,23 +185,10 @@ About Section .body-outer-div {
   flex-direction: column;
 }
 
-.project-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .project-title {
   background-color: #111111;
   padding: 0.5rem 1.25rem;
   text-align: center;
-}
-
-.project-paragraph {
-  color: white;
-  font-weight: 600;
-  font-size: 1.25rem;
-  transition: color 0.3s ease;
 }
 
 .project-paragraph:hover {
@@ -336,32 +279,6 @@ nav {
 
 .nav-bar:hover a {
   color: white;
-}
-
-img[alt="ankit-image"] {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  margin-top: -5rem;
-  object-fit: cover;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.passion {
-  height: 2rem;
-  background-color: #1d1d1d;
-  border-radius: 0.5rem;
-  color: #a6a6a6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  padding: 0 1rem;
 }
 
 .passion h6 {
