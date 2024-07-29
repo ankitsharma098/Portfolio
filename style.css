@@ -50,10 +50,6 @@ body {
   transition: color 0.3s;
 }
 
-.nav-bar a:hover {
-  color: #e4306d;
-}
-
 /* Section Styles */
 .about-outer-div,
 .resume-container,
@@ -85,15 +81,6 @@ h2 {
   gap: 1.5rem;
   margin-bottom: 2rem;
   width: 100%;
-}
-
-.phone-no-card,
-.email-card {
-  background-color: #1d1d1d;
-  border-radius: 0.9375rem;
-  padding: 1rem;
-  text-align: center;
-  flex: 1;
 }
 
 form {
