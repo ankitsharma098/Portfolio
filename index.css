@@ -171,20 +171,6 @@ About Section .body-outer-div {
   gap: 1.25rem;
 }
 
-.project-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.project-card {
-  width: 48%;
-  border-radius: 0.5rem;
-  border: 2px solid #a6a6a6;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
 .project-title {
   background-color: #111111;
   padding: 0.5rem 1.25rem;
@@ -205,17 +191,6 @@ About Section .body-outer-div {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-.dialog-content {
-  background-color: #111111;
-  margin: 15% auto;
-  padding: 20px;
-  border: 2px solid #a6a6a6;
-  width: 60%;
-  border-radius: 12px;
-  position: relative;
-  color: white;
 }
 
 .close-btn {
